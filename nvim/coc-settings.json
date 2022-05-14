@@ -1,0 +1,18 @@
+{
+  "suggest.noselect": false,
+  "eslint.enabled": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "javascriptreact",
+    "typescript.tsx",
+    "python",
+    "html",
+    "css",
+    "graphql"
+  ]
+}
