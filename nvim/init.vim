@@ -27,6 +27,7 @@ Plug 'yuki-yano/fern-preview.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'antoinemadec/FixCursorHold.nvim'
+Plug 'lambdalisue/glyph-palette.vim'
 call plug#end()
 
 
@@ -279,3 +280,11 @@ augroup END
 let g:fern#renderer = "nerdfont"
 
 let g:fern#default_hidden=1
+let g:fern#default_exclude = '^\%(\.git\|\.byebug\)$'
+let g:fern#default_exclude = '^.DS_Store$'
+
+augroup my-glyph-palette
+  autocmd! *
+  autocmd FileType fern call glyph_palette#apply()
+  autocmd FileType nerdtree,startify call glyph_palette#apply()
+augroup END
